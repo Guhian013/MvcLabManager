@@ -16318,6 +16318,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\Gustavo Ian\\Documents\\Guh\\Thoings\\Things\\IFSP\\3º Ano\\LP3\\MvcLabManager\\Views\\Computer\\Update.cshtml",
+      "TargetPath": "Views\\Computer\\Update.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\Gustavo Ian\\Documents\\Guh\\Thoings\\Things\\IFSP\\3º Ano\\LP3\\MvcLabManager\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

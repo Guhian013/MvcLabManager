@@ -1,13 +1,12 @@
 @model MvcLabManager.Models.Computer
 
 @{
-    ViewData["Title"] = "Cadastrar computador";
+    ViewData["Title"] = "Atualizar computador";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<form method="post" asp-action="Create">
-
+<form method="post" asp-action="Update">
     <div class="form-group">
         <label>Ram</label>
         <input type="text" asp-for="@Model.Ram" class="form-control">
@@ -17,5 +16,6 @@
         <label>Processador</label>
         <input type="text" asp-for="@Model.Processor" class="form-control">
     </div>
+
     <button type="submit" class="btn btn-primary mt-2">Finalizar</button>
 </form>
