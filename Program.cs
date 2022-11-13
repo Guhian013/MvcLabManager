@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+git using Microsoft.EntityFrameworkCore;
 using MvcLabManager.Models;
 
 var builder = WebApplication.CreateBuilder(args);

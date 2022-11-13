@@ -17,6 +17,25 @@ public class ComputerController : Controller
         return View(_context.Computers);
     }
 
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Computer computer)
+    {
+        if(!ModelState.IsValid) 
+        {
+            return View(computer);
+        }
+        
+        _context.Computers.Add(computer);
+        _context.SaveChanges();
+
+        return RedirectToAction("Index");
+    }
+
     public IActionResult Show(int id) 
     {
         Computer computer = _context.Computers.Find(id);
@@ -27,5 +46,46 @@ public class ComputerController : Controller
         }
 
         return View(computer);
+    }
+
+    public IActionResult Delete(int id)
+    {
+        Computer computer = _context.Computers.Find(id);
+
+        if(computer == null)
+        {
+            return NotFound();
+        }
+       
+        _context.Computers.Remove(computer);
+        _context.SaveChanges();
+
+        return RedirectToAction("Index");
+    }
+
+    public IActionResult Update(int id)
+    {
+        Computer computer = _context.Computers.Find(id);
+
+        if(computer == null)
+        {
+            return NotFound();
+        }
+
+        return View(computer);
+    }
+
+    [HttpPost]
+    public IActionResult Update(Computer computer)
+    {
+        if(!ModelState.IsValid) 
+        {
+            return View(computer);
+        }
+
+        _context.Computers.Update(computer);
+        _context.SaveChanges();
+
+        return RedirectToAction("Index");
     }
 }

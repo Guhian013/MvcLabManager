@@ -29,8 +29,8 @@ else
                     <th>@computer.Ram</th>
                     <th>@computer.Processor</th>
                     <th>
-                        <a class="btn btn-primary btn-sm" href="/Computer/Show/@computer.Id">
-                            Ver
+                        <a class="btn btn-primary btn-sm" asp-controller="Computer" asp-action="Show" asp-route-id="@computer.Id">
+                            Ver Detalhes
                         </a>
                     </th>
                 </tr>
