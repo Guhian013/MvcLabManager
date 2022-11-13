@@ -16338,6 +16338,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\Gustavo Ian\\Documents\\Guh\\Thoings\\Things\\IFSP\\3º Ano\\LP3\\MvcLabManager\\Views\\Computer\\Create.cshtml",
+      "TargetPath": "Views\\Computer\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\Gustavo Ian\\Documents\\Guh\\Thoings\\Things\\IFSP\\3º Ano\\LP3\\MvcLabManager\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
